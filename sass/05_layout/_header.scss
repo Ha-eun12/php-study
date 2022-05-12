@@ -1,0 +1,44 @@
+// 헤더 시작 ------------------------------------------------------------------------ /
+.header {
+    @include position(fixed, 0, null, 0, 0);
+    background-color: $white;
+    z-index: 10;
+    //box-shadow: 0 2px 2px $box-shadow;
+
+    .inner {
+        padding: 0 16px;
+        height: 56px;
+        line-height: 56px;
+    }
+    &__title {
+        text-align: center;
+
+        h2.title-text {
+            font-size: 16px;
+            font-weight: bold;
+        }
+    }
+    .logo {
+        img {
+            padding-bottom: 6px;
+        }
+    }
+    .logo,
+    .title-text {
+        display: inline-block;
+    }
+    &--left {
+        @include psTop($ps:absolute, $top:50%, $transY:-50%);
+
+        .drow-btn {
+            background-position: 97.238% 39.792%;
+        }
+    }
+}
+
+.logo {
+    width: 122px;
+    height: auto;
+}
+
+// 헤더 종료 --------------------------------------------------------------------- /
