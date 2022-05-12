@@ -36,7 +36,7 @@
                     </div>
 
                     <div class="user-info__right">
-                        <a href="#">회원정보</a>
+                        <a href="#">회원정보view</a>
                     </div>
                 </div>
             </div>
